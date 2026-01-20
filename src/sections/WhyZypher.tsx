@@ -29,7 +29,7 @@ export function WhyZypher() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
                 {features.map((feature, index) => (
                     <div
                         key={index}
