@@ -55,7 +55,7 @@ export function CoreFeatures() {
                         variants={item}
                         className="flex flex-col gap-2 group"
                     >
-                        <div className="text-metallic text-3xl font-bold tracking-tight">
+                        <div className="text-metallic-dark text-3xl font-bold tracking-tight">
                             {feature.id}
                         </div>
 

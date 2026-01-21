@@ -49,7 +49,7 @@ export function Navbar() {
                         <Button variant="ghost" size="sm">
                             Log in
                         </Button>
-                        <Button size="sm" className="bg-accent hover:bg-accent/90 text-white">
+                        <Button size="sm" className="hover:bg-accent/90 bg-metallic text-[#1a1a1a]">
                             Get Started
                         </Button>
                     </div>

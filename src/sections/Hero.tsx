@@ -35,7 +35,7 @@ export function Hero() {
                     {/* Left Column: Text Content */}
                     <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8">
                         <div>
-                            <h3 className="text-metallic text-sm md:text-base font-bold tracking-[0.2em] uppercase">
+                            <h3 className="text-metallic-dark text-sm md:text-base font-bold tracking-[0.2em] uppercase">
                                 Welcome to ZYPHER Crypto Cards
                             </h3>
                             <Reveal delay={0.2} width="100%" className="-mt-10">
@@ -43,7 +43,7 @@ export function Hero() {
                                     Banking Without <br />
                                     <span className="text-muted-foreground">the Bank.</span>
                                 </h1>
-                                <p className="text-2xl md:text-3xl font-bold text-metallic mt-6">
+                                <p className="text-2xl md:text-3xl font-bold text-metallic-dark mt-6">
                                     Your Crypto. Your Card. Your Privacy.
                                 </p>
                             </Reveal>

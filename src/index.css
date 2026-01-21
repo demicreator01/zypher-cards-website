@@ -131,6 +131,14 @@
     /* Fallback */
   }
 
+  .text-metallic-dark {
+    background: linear-gradient(128.62deg, #C4B07B 11.02%, #5C584E 93.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
   .bg-dark-radial {
     background: radial-gradient(89.54% 67.34% at 33.89% -8.16%, #949494 0%, #181818 63.52%, #1D1D1D 100%);
   }
