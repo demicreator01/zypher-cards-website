@@ -31,12 +31,12 @@ export function Footer() {
                         <img
                             src="/darkmode-barcode.svg"
                             alt="Zypher Cards Barcode"
-                            className="max-w-[320px] hidden dark:block"
+                            className="w-full max-w-[320px] hidden dark:block"
                         />
                         <img
                             src="/lightmode-barcode.png"
                             alt="Zypher Cards Barcode"
-                            className="max-w-[320px] block dark:hidden"
+                            className="w-full max-w-[320px] block dark:hidden"
                         />
                     </div>
                 </div>

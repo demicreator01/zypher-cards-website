@@ -23,13 +23,16 @@ export function CTA() {
 
                 <Reveal delay={0.4} className="mx-auto -mt-8">
                     <div className="pt-8 mx-auto">
-                        <motion.button
+                        <motion.a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.zypher.cards/dashboard/cards"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="h-20 px-12 text-xl font-bold bg-metallic text-[#1a1a1a] rounded-full shadow-[0_0_40px_-5px_rgba(255,245,208,0.3)]"
+                            className="flex items-center w-[97%] h-20 py-2 sm:py-0 px-12 text-lg sm:text-xl font-bold bg-metallic text-[#1a1a1a] rounded-full shadow-[0_0_40px_-5px_rgba(255,245,208,0.3)]"
                         >
                             Start Now – No KYC, No Barriers Get Your Card
-                        </motion.button>
+                        </motion.a>
                     </div>
                 </Reveal>
             </div>

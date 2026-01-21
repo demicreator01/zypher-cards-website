@@ -82,7 +82,7 @@ export function Navbar() {
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="text-base font-medium text-foreground py-2 hover:text-accent transition-colors"
+                                    className="text-base font-medium text-foreground py-2 hover:text-metallic transition-colors"
                                 >
                                     {link.name}
                                 </a>
@@ -91,7 +91,9 @@ export function Navbar() {
                                 <Button variant="outline" className="w-full">
                                     Log in
                                 </Button>
-                                <Button className="w-full bg-accent text-white">Get Started</Button>
+                                <Button className="hover:bg-accent/90 bg-metallic text-[#1a1a1a]">
+                                    Get Started
+                                </Button>
                             </div>
                         </div>
                     </motion.div>

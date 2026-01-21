@@ -36,15 +36,15 @@ export function HowItWorks() {
                         >
                             {/* Step Circle */}
                             <div className="relative mb-8">
-                                <div className="w-20 h-20 rounded-full bg-card border border-border group-hover:border-accent flex items-center justify-center transition-all duration-500 shadow-2xl z-20 relative">
-                                    <step.icon className="w-8 h-8 text-muted-foreground group-hover:text-accent transition-colors duration-500" />
+                                <div className="w-20 h-20 rounded-full bg-card border border-border group-hover:border-metallic flex items-center justify-center transition-all duration-500 shadow-2xl z-20 relative">
+                                    <step.icon className="w-8 h-8 text-muted-foreground group-hover:text-metallic transition-colors duration-500" />
                                 </div>
                                 <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-metallic text-[#1a1a1a] font-bold flex items-center justify-center text-sm shadow-lg z-30">
                                     {index + 1}
                                 </div>
                             </div>
 
-                            <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-accent transition-colors">{step.title}</h3>
+                            <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-metallic transition-colors">{step.title}</h3>
                             <p className="text-muted-foreground font-light leading-relaxed text-sm">
                                 {step.desc}
                             </p>
