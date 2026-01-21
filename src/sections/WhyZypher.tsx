@@ -1,32 +1,17 @@
 import { Section } from "@/components/ui/section";
-import Squares from "@/components/ui/squares";
 import { Reveal } from "@/components/ui/reveal";
 
 
 export function WhyZypher() {
     return (
-        <Section className="relative overflow-hidden py-32">
-            <Squares
-                speed={0.15}
-                squareSize={40}
-                direction="diagonal"
-                borderColor="#333"
-                hoverFillColor="#222"
-            />
+        <Section className="relative overflow-hidden py-18">
 
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <div className="flex justify-between items-center mb-16 border-t border-white/10 pt-8">
-                        <span className="text-sm font-light tracking-wider text-white/50">ZYPHER</span>
-                        <span className="text-metallic text-sm font-bold tracking-[0.2em]">02</span>
-                    </div>
-
-                    <Reveal width="100%">
-                        <h2 className="text-6xl md:text-7xl font-black mb-8 leading-[0.9]">
-                            Why <br /> ZYPHER?
-                        </h2>
-                    </Reveal>
-                </div>
+                <Reveal width="100%">
+                    <h2 className="text-6xl md:text-7xl font-black mb-8 leading-[0.9]">
+                        Why <br /> ZYPHER?
+                    </h2>
+                </Reveal>
 
                 <div className="flex flex-col justify-center space-y-12">
                     <Reveal delay={0.2} width="100%">

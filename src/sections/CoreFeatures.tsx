@@ -37,9 +37,6 @@ export function CoreFeatures() {
                             <h2 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">Core Features</h2>
                         </Reveal>
                     </div>
-                    <div className="hidden md:block text-right">
-                        <span className="text-metallic text-lg tracking-[0.2em] font-light">03</span>
-                    </div>
                 </div>
             </div>
 

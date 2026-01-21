@@ -1,5 +1,6 @@
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
+import { motion, type Variants } from "framer-motion";
 import {
     Accordion,
     AccordionContent,
@@ -9,7 +10,7 @@ import {
 
 const faqs = [
     {
-        question: "Is KYC required to use ZYPHER.CARDS?",
+        question: "Is KYC required to use ZYPHER?",
         answer: "No. We do not require any ID verification or documents."
     },
     {
@@ -26,10 +27,23 @@ const faqs = [
     }
 ];
 
+const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: i * 0.1,
+            duration: 0.5,
+            ease: [0.25, 0.1, 0.25, 1]
+        }
+    })
+};
+
 export function FAQ() {
     return (
-        <Section className="py-24 max-w-4xl mx-auto">
-            <div className="text-center mb-16">
+        <Section className="py-18 max-w-4xl mx-auto">
+            <div className="text-center mb-28">
                 <Reveal width="100%">
                     <h2 className="text-4xl md:text-5xl font-black mb-6">FAQ</h2>
                 </Reveal>
@@ -38,7 +52,14 @@ export function FAQ() {
             <div className="mx-auto">
                 <Accordion type="single" collapsible className="w-full space-y-4">
                     {faqs.map((faq, i) => (
-                        <Reveal key={i} delay={i * 0.1} width="100%">
+                        <motion.div
+                            key={i}
+                            custom={i}
+                            variants={itemVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, margin: "-50px" }}
+                        >
                             <AccordionItem value={`item-${i}`} className="border border-border bg-card rounded-lg px-6 transition-colors hover:border-accent/30">
                                 <AccordionTrigger className="text-lg font-bold text-foreground dark:hover:text-[#FFF5D0] text-left">
                                     {faq.question}
@@ -47,10 +68,11 @@ export function FAQ() {
                                     {faq.answer}
                                 </AccordionContent>
                             </AccordionItem>
-                        </Reveal>
+                        </motion.div>
                     ))}
                 </Accordion>
             </div>
         </Section>
     );
 }
+
