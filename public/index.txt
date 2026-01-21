@@ -291,7 +291,7 @@ Content:
 ZYPHER logo (left)
 Links columns:
 
-Product (Features, Pricing, How It Works)
+Product (Features, Card Options, How It Works)
 Company (About, Privacy, Terms)
 Support (FAQ, Contact, Docs)
 

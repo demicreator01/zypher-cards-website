@@ -34,7 +34,7 @@ function App() {
           <HowItWorks />
         </section>
 
-        <section id="pricing">
+        <section id="card-options">
           <CardOptions />
         </section>
 

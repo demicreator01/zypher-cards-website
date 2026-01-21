@@ -75,7 +75,7 @@ export function Hero() {
                             <img
                                 src="/hero-image-3.svg"
                                 alt="Zypher App Interface"
-                                className="w-full max-w-[550px] aspect-[450/500] object-contain drop-shadow-2xl hover:scale-[1.02] transition-transform duration-700"
+                                className="w-full max-w-[550px] aspect-450/500 object-contain drop-shadow-2xl hover:scale-[1.02] transition-transform duration-700"
                                 loading="eager"
                             />
                         </div>
