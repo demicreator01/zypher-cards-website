@@ -1,7 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { UserPlus, Wallet as WalletIcon, CreditCard, ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
-import { Reveal } from "@/components/ui/reveal";
+// import { Reveal } from "@/components/ui/reveal";
 
 const steps = [
     { icon: UserPlus, title: "Create Your Account", desc: "No documents. Just an email or phone number." },
@@ -13,10 +13,11 @@ const steps = [
 export function HowItWorks() {
     return (
         <Section className="pb-1 md:pb-8 pt-0 relative">
-            <div className="text-center -mt-18 -mb-1 md:mb-18">
-                <Reveal width="100%">
-                    <h2 className="text-5xl md:text-6xl font-black mb-6">How It Works</h2>
-                </Reveal>
+            <div className="text-center -mt-18 -mb-18 md:mb-18">
+                {/* <Reveal width="100%"> */}
+                <h2 className="text-5xl md:text-6xl font-b mb-6">How It Works</h2>
+                <h2 className="text-5xl md:text-6xl font-bold">How it works</h2>
+                {/* </Reveal> */}
             </div>
 
             <div className="relative max-w-7xl mx-auto">

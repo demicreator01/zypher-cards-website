@@ -5,7 +5,7 @@ export function Footer() {
         <footer className="bg-card border-t border-border pt-16 pb-8 mt-10">
             <div className="container mx-auto px-4 md:px-8 max-w-7xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-                    <div className="col-span-1 md:col-span-1 max-w-[320px]">
+                    <div className="col-span-1 md:col-span-1 max-w-[400px] md:self-center">
                         <div className="flex items-center h-8 mb-6">
                             <img
                                 src="/Light-Theme-Zypher-Logo.png"
@@ -18,20 +18,26 @@ export function Footer() {
                                 className="h-full w-auto hidden dark:block"
                             />
                         </div>
-                        <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                        <p className="text-muted-foreground text-sm leading-relaxed mb-2">
                             The world's most private, secure, and anonymous crypto card platform.
                             Banking without the bank.
                         </p>
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                            Reach our support team at support@zypher.cards
+                        </p>
                     </div>
 
-                    <div className="justify-center">
-                        <h4 className="font-semibold mb-4 text-foreground">Product</h4>
-                        <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><a href="#features" className="hover:text-accent transition-colors">Features</a></li>
-                            <li><a href="#how-it-works" className="hover:text-accent transition-colors">How it words</a></li>
-                            <li><a href="#card-options" className="hover:text-accent transition-colors">Card Options</a></li>
-                            <li><a href="#faq" className="hover:text-accent transition-colors">FAQ</a></li>
-                        </ul>
+                    <div className="justify-end">
+                        <img
+                            src="/darkmode-barcode.svg"
+                            alt="Zypher Cards Barcode"
+                            className="max-w-[320px] hidden dark:block"
+                        />
+                        <img
+                            src="/lightmode-barcode.png"
+                            alt="Zypher Cards Barcode"
+                            className="max-w-[320px] block dark:hidden"
+                        />
                     </div>
                 </div>
             </div>

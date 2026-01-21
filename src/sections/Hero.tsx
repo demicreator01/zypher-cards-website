@@ -1,7 +1,6 @@
 
 import { Section } from "@/components/ui/section";
 import { Globe, CreditCard } from "lucide-react";
-import { Reveal } from "@/components/ui/reveal";
 import { motion, useSpring, useTransform, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
@@ -38,74 +37,67 @@ export function Hero() {
                             <h3 className="text-metallic text-sm md:text-base font-bold tracking-[0.2em] uppercase">
                                 Welcome to ZYPHER Crypto Cards
                             </h3>
-                            <Reveal delay={0.2} width="100%" className="-mt-14 md:-mt-10">
-                                <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-foreground leading-[1.05]">
-                                    Banking Without <br />
-                                    <span className="text-muted-foreground">the Bank.</span>
-                                </h1>
-                                <p className="text-2xl md:text-3xl font-bold text-metallic mt-2 md:mt-6">
-                                    Your Crypto. Your Card. Your Privacy.
-                                </p>
-                            </Reveal>
+                            <h1 className="mt-2 text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-foreground leading-[1.05]">
+                                Banking Without <br />
+                                <span className="text-muted-foreground">the Bank.</span>
+                            </h1>
+                            <p className="text-2xl md:text-3xl font-bold text-metallic mt-2 md:mt-6">
+                                Your Crypto. Your Card. Your Privacy.
+                            </p>
 
-                            <Reveal delay={0.4}>
-                                <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed font-light mt-6 mx-auto lg:mx-0">
-                                    The world's most private, secure, and anonymous crypto card platform.
-                                    Spend anywhere — <span className="text-foreground font-medium">no KYC, no ID, no tracking.</span>
-                                </p>
-                            </Reveal>
 
-                            <Reveal delay={0.6} className="mx-auto">
-                                <div className="flex flex-col sm:flex-row gap-5 pt-3 md:pt-8 justify-center lg:justify-start">
-                                    <motion.button
-                                        whileHover={{ scale: 1.05 }}
-                                        whileTap={{ scale: 0.95 }}
-                                        className="h-16 px-8 text-lg font-bold bg-metallic text-[#1a1a1a] rounded-lg shadow-[0_0_30px_-5px_rgba(255,245,208,0.3)] flex items-center justify-center gap-2"
-                                    >
-                                        👉 Get Started Instantly
-                                    </motion.button>
-                                </div>
-                            </Reveal>
+                            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed font-light mt-6 mx-auto lg:mx-0">
+                                The world's most private, secure, and anonymous crypto card platform.
+                                Spend anywhere — <span className="text-foreground font-medium">no KYC, no ID, no tracking.</span>
+                            </p>
+
+
+                            <div className="mx-auto flex flex-col sm:flex-row gap-5 pt-3 md:pt-8 justify-center lg:justify-start">
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="h-16 px-8 text-lg font-bold bg-metallic text-[#1a1a1a] rounded-lg shadow-[0_0_30px_-5px_rgba(255,245,208,0.3)] flex items-center justify-center gap-2"
+                                >
+                                    👉 Get Started Instantly
+                                </motion.button>
+                            </div>
+
                         </div>
                     </div>
 
                     {/* Right Column: Image */}
-                    <Reveal delay={0.6} width="100%" className="">
-                        <div className="relative order-1 lg:order-2 flex justify-center self-center">
-                            <img
-                                src="/hero-image-3.svg"
-                                alt="Zypher App Interface"
-                                className="w-full max-w-[550px] aspect-450/500 object-contain drop-shadow-2xl hover:scale-[1.02] transition-transform duration-700"
-                                loading="eager"
-                            />
-                        </div>
-                    </Reveal>
+                    <div className="relative order-1 lg:order-2 flex justify-center self-center">
+                        <img
+                            src="/hero-image-3.svg"
+                            alt="Zypher App Interface"
+                            className="w-full max-w-[550px] aspect-450/500 object-contain drop-shadow-2xl hover:scale-[1.02] transition-transform duration-700"
+                            loading="eager"
+                        />
+                    </div>
                 </div>
 
                 {/* Bottom: Stats */}
-                <Reveal delay={0.8} width="100%" className="">
-                    <div className="py-10 pb-5 md:pb-8 flex flex-wrap justify-center gap-8 md:gap-16 opacity-80 border-t border-border/40 -mt-22 md:-mt-32 lg:mt-4">
-                        <div className="flex items-center gap-3">
-                            <Globe className="w-10 h-10 text-foreground dark:text-[#FFF5D0]" />
-                            <div className="text-left">
-                                <div className="text-4xl font-black text-foreground leading-none">
-                                    <CountUp to={160} suffix="+" />
-                                </div>
-                                <span className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Countries</span>
+                <div className="py-10 pb-5 md:pb-8 flex flex-wrap justify-center gap-8 md:gap-16 opacity-80 border-t border-border/40 -mt-22 md:-mt-32 lg:mt-4">
+                    <div className="flex items-center gap-3">
+                        <Globe className="w-10 h-10 text-foreground dark:text-[#FFF5D0]" />
+                        <div className="text-left">
+                            <div className="text-4xl font-black text-foreground leading-none">
+                                <CountUp to={160} suffix="+" />
                             </div>
-                        </div>
-                        <div className="hidden md:block w-px h-12 bg-border" />
-                        <div className="flex items-center gap-3">
-                            <CreditCard className="w-10 h-10 text-foreground dark:text-[#FFF5D0]" />
-                            <div className="text-left">
-                                <div className="text-4xl font-black text-foreground leading-none">
-                                    <CountUp to={150} suffix="M+" />
-                                </div>
-                                <span className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Merchants</span>
-                            </div>
+                            <span className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Countries</span>
                         </div>
                     </div>
-                </Reveal>
+                    <div className="hidden md:block w-px h-12 bg-border" />
+                    <div className="flex items-center gap-3">
+                        <CreditCard className="w-10 h-10 text-foreground dark:text-[#FFF5D0]" />
+                        <div className="text-left">
+                            <div className="text-4xl font-black text-foreground leading-none">
+                                <CountUp to={150} suffix="M+" />
+                            </div>
+                            <span className="text-xs font-bold tracking-widest text-muted-foreground uppercase">Merchants</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </Section>
     );
