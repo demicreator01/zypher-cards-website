@@ -71,14 +71,12 @@ export function Hero() {
 
                     {/* Right Column: Image */}
                     <Reveal delay={0.6} width="100%" className="">
-                        <div className="relative order-1 lg:order-2 flex justify-center">
+                        <div className="relative order-1 lg:order-2 flex justify-center self-center">
                             <img
                                 src="/hero-image-3.svg"
                                 alt="Zypher App Interface"
-                                className="w-full max-w-[550px] h-auto object-contain drop-shadow-2xl hover:scale-[1.02] transition-transform duration-700"
+                                className="w-full max-w-[550px] aspect-[450/500] object-contain drop-shadow-2xl hover:scale-[1.02] transition-transform duration-700"
                                 loading="eager"
-                                width={600}
-                                height={600}
                             />
                         </div>
                     </Reveal>
@@ -86,7 +84,7 @@ export function Hero() {
 
                 {/* Bottom: Stats */}
                 <Reveal delay={0.8} width="100%" className="">
-                    <div className="py-10 pb-20 flex flex-wrap justify-center gap-8 md:gap-16 opacity-80 border-t border-border/40 mt-4">
+                    <div className="py-10 pb-20 flex flex-wrap justify-center gap-8 md:gap-16 opacity-80 border-t border-border/40 -mt-32 lg:mt-4">
                         <div className="flex items-center gap-3">
                             <Globe className="w-10 h-10 text-foreground dark:text-[#FFF5D0]" />
                             <div className="text-left">

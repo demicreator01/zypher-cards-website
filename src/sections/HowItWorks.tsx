@@ -12,7 +12,7 @@ const steps = [
 
 export function HowItWorks() {
     return (
-        <Section className="py-18 relative">
+        <Section className="pb-8 pt-0 relative">
             <div className="text-center mb-24">
                 <Reveal width="100%">
                     <h2 className="text-5xl md:text-6xl font-black mb-6">How It Works</h2>
