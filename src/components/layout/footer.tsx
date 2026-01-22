@@ -25,7 +25,7 @@ export function Footer() {
                         <p className="text-muted-foreground text-sm mt-5">
                             Reach our support team at
                         </p>
-                        <p className="text-3xl font-bold text-black -mt-1 dark:text-white">support@zypher.cards</p>
+                        <p className="text-xl xxs:text-2xl xs:text-3xl font-bold text-black -mt-1 dark:text-white">support@zypher.cards</p>
                     </div>
 
                     <div className="justify-end">

@@ -48,10 +48,18 @@ export function Navbar() {
                     <div className="flex items-center gap-4">
                         <ThemeToggle />
                         <Button variant="ghost" size="sm">
-                            Log in
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.zypher.cards/dashboard/cards"
+                            >Log in</a>
                         </Button>
                         <Button size="sm" className="hover:bg-accent/90 bg-metallic text-[#1a1a1a]">
-                            Get Started
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.zypher.cards/dashboard/cards"
+                            >Get Started</a>
                         </Button>
                     </div>
                 </div>
@@ -90,10 +98,18 @@ export function Navbar() {
                             ))}
                             <div className="flex flex-col gap-3 mt-4">
                                 <Button variant="outline" className="w-full">
-                                    Log in
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://www.zypher.cards/dashboard/cards"
+                                    >Log in</a>
                                 </Button>
                                 <Button className="hover:bg-accent/90 bg-metallic text-[#1a1a1a]">
-                                    Get Started
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://www.zypher.cards/dashboard/cards"
+                                    >Get Started</a>
                                 </Button>
                             </div>
                         </div>
