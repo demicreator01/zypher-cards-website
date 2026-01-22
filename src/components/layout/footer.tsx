@@ -18,13 +18,14 @@ export function Footer() {
                                 className="h-full w-auto hidden dark:block"
                             />
                         </div>
-                        <p className="text-muted-foreground text-sm leading-relaxed mb-2">
+                        <p className="text-muted-foreground text-sm leading-4 mb-2">
                             The world's most private, secure, and anonymous crypto card platform.
                             Banking without the bank.
                         </p>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                            Reach our support team at support@zypher.cards
+                        <p className="text-muted-foreground text-sm mt-5">
+                            Reach our support team at
                         </p>
+                        <p className="text-3xl font-bold text-black -mt-1 dark:text-white">support@zypher.cards</p>
                     </div>
 
                     <div className="justify-end">
